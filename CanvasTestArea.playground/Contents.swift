@@ -57,8 +57,8 @@ canvas.drawEllipse(centreX: 0, centreY: 0, width: 15, height: 15)
 //// Draw an ellipse in a different color at the centre of the canvas
 //canvas.fillColor = Color.green
 //canvas.drawEllipse(centreX: 150, centreY: 250, width: 50, height: 100)
-
-
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 80, height: 40)
+canvas.fillColor = Color.purple
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
 
