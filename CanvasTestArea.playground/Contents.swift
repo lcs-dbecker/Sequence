@@ -27,26 +27,26 @@ let canvas = Canvas(width: 300, height: 500)
 //canvas.drawAxes()
 canvas.translate(byX: 25, byY: 300)
 canvas.rotate(by: -45)
-//canvas.drawAxes()
+
 canvas.drawEllipse(centreX: 50, centreY: 50, width: 60, height: 100)
 canvas.rotate(by: 45)
-canvas.drawAxes()
+
 
 //Draw right eye
 canvas.translate(byX: 200, byY: 0)
-canvas.drawAxes()
+
 canvas.rotate(by: 45)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 60, height: 100)
 canvas.rotate(by: -45)
 
 canvas.fillColor = Color.white
 canvas.translate(byX: -8, byY: 20)
-canvas.drawAxes()
+
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 15, height: 15)
 
 canvas.fillColor = Color.white
 canvas.translate(byX: -105, byY: 0)
-canvas.drawAxes()
+
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 15, height: 15)
 //// Draw a circle at the origin with radius of 50 pixels
 //canvas.drawEllipse(centreX: -50, centreY: 50, width: 50, height: 100)
@@ -55,9 +55,23 @@ canvas.drawEllipse(centreX: 0, centreY: 0, width: 15, height: 15)
 //
 //
 //Draw Left Cheek
-canvas.drawEllipse(centreX: 150, centreY: 250, width: 50, height: 100)
 canvas.fillColor = Color.purple
-canvas.drawEllipse(centreX: 0, centreY: 0, width: 80, height: 40)
+canvas.drawEllipse(centreX: -35, centreY: -73, width: 40, height: 20)
+
+//Draw right cheek
+canvas.drawEllipse(centreX: 135, centreY: -73, width: 40, height: 20)
+
+
+
+//Draw Nose
+canvas.drawAxes()
+canvas.fillColor = Color.black
+canvas.drawEllipse(centreX: 50, centreY: -60, width: 55, height: 30)
+
+
+
+
+
 
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
